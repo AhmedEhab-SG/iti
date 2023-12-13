@@ -1,0 +1,72 @@
+.mainSection {
+  border: 3px solid black;
+  height: 630px;
+  width: 60%;
+  border-radius: 3%;
+  display: flex;
+  padding: 30px 70px;
+  gap: 60px;
+  box-shadow: orangered 10px 10px 75px inset;
+  justify-self: center;
+  margin: auto;
+}
+
+.videosList {
+  width: 25%;
+  border-radius: 25px;
+  border: 3px solid black;
+  box-shadow: orange 5px 5px 60px inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoShow {
+  width: 85%;
+  border-radius: 25px;
+
+  border: 3px solid black;
+
+  box-shadow: orange 5px 5px 60px inset;
+}
+
+.videosBtns {
+  width: 80%;
+  height: 590px;
+  background-color: white;
+}
+
+.videosBtnss:hover {
+  background-color: orange;
+}
+
+button {
+  border: 3px solid blue;
+  display: block;
+  width: 75%;
+  height: 9%;
+  margin-left: 15%;
+  margin-top: 3%;
+  border-radius: 15px;
+  background-color: transparent;
+  font-weight: bold;
+  transition: all 2s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  transform: rotate(360deg);
+}
+button:focus {
+  background-color: rgb(46, 105, 255);
+  color: white;
+}
+
+.videoShow {
+  display: flex;
+}
+
+video {
+  width: 100%;
+}

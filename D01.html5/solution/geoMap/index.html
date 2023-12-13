@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fourth Task</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB90FxtYG_ybAYXGkz0ybkmkboE2nEbezI"></script>
+    <script src="javaScript/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f6094340f8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="mainSection">
+      <section class="buttonSection">
+        <button type="button" name="map" onclick="displayMap()">
+          Display Map
+        </button>
+        <button type="button" name="mapInfo" onclick="detaledInfo()">
+          Detailed Information
+        </button>
+      </section>
+      <section class="dataSection">
+        <section id="map"></section>
+        <section id="dataMap">
+          <h5>Latitude (degree)</h5>
+          <input disabled />
+          <h5>Longtitude (degree)</h5>
+          <input disabled />
+          <h5>Accuracy (m)</h5>
+          <input disabled />
+          <h5>TimeStamp (current Time and Date)</h5>
+          <input disabled />
+        </section>
+      </section>
+    </section>
+  </body>
+</html>

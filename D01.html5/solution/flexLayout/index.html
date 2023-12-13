@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./javaScripts/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f6094340f8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Flex Layout</title>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>ITI Locations</h1>
+        <p>ITI Main Locations all over the country</p>
+      </header>
+      <main>
+        <img src="./assets/img/map.png" alt="map" />
+
+        <div class="container">
+          <div class="mainBranch">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Smart Village</span>
+          </div>
+          <div class="secBranch">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Alexandria</span>
+          </div>
+
+          <div class="secBranch">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Assiut</span>
+          </div>
+          <div class="secBranch">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Aswan</span>
+          </div>
+
+          <div class="secBranch">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Ismailia</span>
+          </div>
+          <div class="secBranch">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Mansoura</span>
+          </div>
+
+          <div class="secBranch">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Menofia</span>
+          </div>
+          <div class="secBranch">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Minya</span>
+          </div>
+        </div>
+      </main>
+      <div class="userSelectors">
+        <input
+          type="checkbox"
+          value="mainBranch"
+          id="mainBranch"
+          onchange="showHideMain()"
+        />
+        <label for="mainBranch">Main Branch</label>
+        <input
+          type="checkbox"
+          value="branch"
+          id="branch"
+          onchange="showHideBranch()"
+        />
+        <label for="branch">Branch</label>
+      </div>
+      <footer>
+        <div class="contactUsContainer">
+          <h3>CONTACT US</h3>
+          <ul class="contactUs">
+            <li>
+              <i class="far fa-dot-circle footer__list-icon"></i>
+              <span
+                >28 Km by Cairo / Alexandria Desert Road, 6 October, B148,
+                Egypt</span
+              >
+            </li>
+            <li>
+              <i class="fas fa-phone footer__list-icon"></i>
+              <span>(+202) 353-55656</span>
+            </li>
+            <li>
+              <i class="far fa-envelope footer__list-icon"></i>
+              <span>ITIinfo@iti.gov.eg</span>
+            </li>
+          </ul>
+        </div>
+        <div class="followUsContainer">
+          <h3>Follow Us</h3>
+          <ul class="followUs">
+            <li>
+              <i class="fab fa-facebook-f"></i>
+            </li>
+            <li>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
