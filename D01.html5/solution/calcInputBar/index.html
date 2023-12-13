@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>calc</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script defer src="javaScript/main.js"></script>
+  </head>
+
+  <body>
+    <div class="page">
+      <section class="mainsection">
+        <section class="sumsection">
+          <h3>ADDITION</h3>
+          <div class="inputContainer">
+            <input
+              type="number"
+              id="num1"
+              oninput="performCalculation('sum')"
+            />
+            <p>+</p>
+            <input
+              type="number"
+              id="num2"
+              oninput="performCalculation('sum')"
+            />
+            <p>=</p>
+            <p id="sumResult">0</p>
+          </div>
+        </section>
+        <section class="multiplicationsection">
+          <h3>MULTIPLACTION</h3>
+          <div class="inputContainer">
+            <input
+              type="number"
+              id="num3"
+              oninput="performCalculation('multiply')"
+            />
+            <p>*</p>
+            <input
+              type="number"
+              id="num4"
+              oninput="performCalculation('multiply')"
+            />
+            <p>=</p>
+            <p id="multiplyResult">0</p>
+          </div>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>

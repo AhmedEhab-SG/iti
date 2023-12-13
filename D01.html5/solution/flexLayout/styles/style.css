@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-family: Lobster Two, cursive;
+  color: #901b20;
+  margin-bottom: 1rem;
+  line-height: 2.8rem;
+  font-weight: 300;
+}
+
+header p {
+  font-family: Poppins, sans-serif;
+  line-height: 2.24rem;
+  font-weight: 300;
+  text-transform: none;
+  letter-spacing: 0.05rem;
+  margin-bottom: 4.8rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+img {
+  width: 15rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 40%;
+}
+
+.mainBranch {
+  display: inline-block;
+  color: rgb(144, 27, 32);
+  background-color: #f5f5f5;
+  padding: 1.6rem;
+  font-weight: 500;
+  width: 70%;
+}
+
+.secBranch {
+  display: inline-block;
+  color: rgb(46, 82, 102);
+  background-color: #f5f5f5;
+  padding: 1.6rem;
+  font-weight: 500;
+  width: 70%;
+}
+
+.userSelectors {
+  margin-top: 1.3rem;
+}
+
+footer {
+  margin-top: 2rem;
+  width: 50%;
+  box-sizing: border-box;
+  background-color: #212529;
+  color: white;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  gap: 3rem;
+}
+
+footer ul {
+  list-style: none;
+}
+footer li {
+  margin-block: 1rem;
+}
+
+footer h3 {
+  margin-block: 1rem;
+}
+
+footer span {
+  color: rgb(186, 186, 186);
+}
+
+footer .contactUsContainer i {
+  margin-right: 0.5rem;
+}
+.contactUsContainer {
+  width: 50%;
+}
+
+.followUsContainer {
+  width: 50%;
+}
+
+.followUsContainer li {
+  display: inline-block;
+  background-color: rgb(186, 186, 186);
+  color: #212529;
+  font-size: 1.3rem;
+  padding: 0.3rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (orientation: portrait) {
+  img {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contactUsContainer {
+    width: 100%;
+  }
+
+  .followUsContainer {
+    width: 100%;
+  }
+
+  .container {
+
+    width: 100%;
+  }
+}

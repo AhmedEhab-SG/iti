@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thirdTask</title>
+    <link href="./styles/style.css" rel="stylesheet" />
+    <script src="javaScripts/main.js"></script>
+  </head>
+  <body>
+    <section class="mainSection">
+      <div class="videosList">
+        <div class="videosBtns">
+          <button type="button" value="1" onclick="changeVideo(event)">
+            Video 1
+          </button>
+          <button type="button" value="2" onclick="changeVideo(event)">
+            Video 2
+          </button>
+          <button type="button" value="3" onclick="changeVideo(event)">
+            Video 3
+          </button>
+          <button type="button" value="4" onclick="changeVideo(event)">
+            Video 4
+          </button>
+        </div>
+      </div>
+      <div class="videoShow">
+        <video
+          src="assets/videos/1.mp4"
+          class="myvideo"
+          controls
+          autoplay
+          muted
+        ></video>
+      </div>
+    </section>
+  </body>
+</html>
