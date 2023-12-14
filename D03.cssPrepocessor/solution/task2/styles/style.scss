@@ -1,0 +1,17 @@
+* {
+  font-family: sans-serif;
+}
+
+$styles: dotted, solid, double;
+$colors: cyan, red, green;
+
+@each $style in $styles {
+  .#{$style} {
+    border: 3px $style;
+  }
+}
+@each $color in $colors {
+  .#{$color} {
+    background-color: $color;
+  }
+}
