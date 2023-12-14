@@ -1,3 +1,5 @@
+// task one and two
+
 // const box = document.createElement("div");
 
 // document.addEventListener("click", function (e) {
@@ -12,23 +14,24 @@
 
 /*-------------------------------------------------------*/
 
-// let timerId;
+// task 3 hold mouse
+let timerId;
 
-// document.addEventListener("mousedown", function (e) {
-//   let x = e.clientX;
-//   let y = e.clientY;
-//   timerId = setInterval(() => {
-//     document.addEventListener("mousemove", function (e) {
-//       x = e.clientX;
-//       y = e.clientY;
-//     });
-//     const box = document.createElement("div");
-//     box.classList.add("hold");
-//     box.style.left = `${x - 25}px`;
-//     box.style.top = `${y - 25}px`;
-//     document.body.appendChild(box);
-//   }, 50);
-// });
-// document.addEventListener("mouseup", function (e) {
-//   clearInterval(timerId);
-// });
+document.addEventListener("mousedown", function (e) {
+  let x = e.clientX;
+  let y = e.clientY;
+  timerId = setInterval(() => {
+    document.addEventListener("mousemove", function (e) {
+      x = e.clientX;
+      y = e.clientY;
+    });
+    const box = document.createElement("div");
+    box.classList.add("hold");
+    box.style.left = `${x - 25}px`;
+    box.style.top = `${y - 25}px`;
+    document.body.appendChild(box);
+  }, 50);
+});
+document.addEventListener("mouseup", function (e) {
+  clearInterval(timerId);
+});
