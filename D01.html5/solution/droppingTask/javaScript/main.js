@@ -13,6 +13,12 @@ window.addEventListener("load", function () {
   imagesbottom.addEventListener("dragover", overdrag);
 
   imagestop.addEventListener("dragleave", leavedrag);
+
+  imagestop.addEventListener("drop", droppedBack);
+  imagestop.addEventListener("dragenter", enterdrag);
+  imagestop.addEventListener("dragenter", enterdrag);
+
+  imagesbottom.addEventListener("dragleave", leavedrag);
 });
 
 function startdrag(e) {
@@ -36,6 +42,10 @@ function enddrag(e) {
 function dropped(e) {
   e.preventDefault();
   imagesbottom.innerHTML += e.dataTransfer.getData("myimg");
+}
+function droppedBack(e) {
+  e.preventDefault();
+  imagestop.innerHTML += e.dataTransfer.getData("myimg");
 }
 
 function enterdrag(e) {
