@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 .page {
@@ -20,8 +21,29 @@ aside {
   grid-area: aside;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 2rem;
+  justify-content: flex-start;
+  padding-block: 1rem;
+  padding-inline: 4rem;
+  color: rgb(133, 127, 127);
+}
+
+aside li {
+  list-style: none;
+  font-weight: bold;
+  margin-block: 1rem;
+  cursor: pointer;
+}
+
+aside li:hover {
+  color: black;
+}
+
+aside i {
+  margin-top: 3rem;
+}
+
+aside h3 {
+  margin-block: 2rem;
 }
 
 .page div img {
@@ -59,9 +81,15 @@ header li {
   display: inline-block;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 5rem);
+  grid-row-gap:0.5rem ;
+}
+
 .page .container img {
-  width: 30%;
-  height: 30%;
+  width: 4.5rem;
+  height: 4rem;
 }
 
 main {
