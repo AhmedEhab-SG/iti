@@ -1,0 +1,76 @@
+// media query for continaers
+
+@mixin girdbtw($infix, $numberOfColumns, $minBreakPoint, $maxBreakPoint) {
+  @if ($infix == "md") {
+    @media all and (min-width: $minBreakPoint) and (max-width: $maxBreakPoint) {
+      .row {
+        flex-direction: column-reverse;
+      }
+      .sectionContainer {
+        flex-wrap: nowrap !important;
+      }
+    }
+  }
+  @if ($infix == "sm") {
+    @media all and (min-width: $minBreakPoint) and (max-width: $maxBreakPoint) {
+      .col-btw-#{$infix} {
+        width: 100%;
+      }
+      .nav__container {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+/*------------------------------------------------------------*/
+
+// meedia for get min width
+
+@mixin girdmixin($infix, $numberOfColumns, $breakPoints) {
+  .container-fluid {
+    width: 100%;
+  }
+  .row {
+    display: inline-flex;
+    box-sizing: border-box;
+    justify-content: center;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+  .imgContiner {
+    border: $imgBorders;
+  }
+
+  @if ($infix == "") {
+    @media all and (min-width: $breakPoints) {
+      @for $i from 1 through $numberOfColumns {
+        .col-#{$i} {
+          box-sizing: border-box;
+          width: 100/ ($numberOfColumns / $i) * 1%;
+        }
+      }
+    }
+  } @else {
+    @media all and (min-width: $breakPoints) {
+      @if ($infix == "lg") {
+        .imgContiner {
+          padding: 1rem;
+          border: $imgBorders;
+        }
+        .section {
+          min-width: 0;
+        }
+      }
+      @for $i from 1 through $numberOfColumns {
+        .col-#{$infix}-#{$i} {
+          box-sizing: border-box;
+          width: 100/ ($numberOfColumns / $i) * 1%;
+        }
+      }
+    }
+  }
+}

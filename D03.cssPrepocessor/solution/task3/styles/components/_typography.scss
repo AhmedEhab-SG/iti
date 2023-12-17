@@ -1,0 +1,15 @@
+.typeH5 {
+  font-size: $hFontSize;
+  color: $hColor;
+  margin-block: $hMarginB;
+  padding-inline: 0.8rem;
+}
+
+.typoP {
+  color: $pColor;
+  padding-inline: 0.8rem;
+}
+
+.typobg--inherit {
+  background-color: inherit;
+}

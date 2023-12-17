@@ -1,0 +1,12 @@
+.btn {
+  padding: 0.8rem;
+  border: $btnBorder;
+  background-color: $bgcolor;
+  border-top-left-radius: $topLeftRadius;
+  border-bottom-right-radius: $btmRightRadius;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $btnBgcolorHover;
+  }
+}

@@ -1,0 +1,20 @@
+/*------------------------------------------------------*/
+.page {
+  box-sizing: border-box;
+  padding: $themePagePadding;
+}
+
+@include girdbtw("sm", 12, 0px, 768px);
+@include girdbtw("md", 12, 768px, 992px);
+@include girdbtw("lg", 12, 992px, 1200px);
+@include girdbtw("xl", 12, 1200px, 1400px);
+@include girdbtw("xxl", 12, 1400px, 1920px);
+
+/*------------------------------------------------*/
+
+@include girdmixin("", 12, 0px);
+@include girdmixin("sm", 12, 576px);
+@include girdmixin("md", 12, 768px);
+@include girdmixin("lg", 12, 992px);
+@include girdmixin("xl", 12, 1200px);
+@include girdmixin("xxl", 12, 1400px);

@@ -1,0 +1,11 @@
+footer {
+  background-color: $bgcolor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 1rem 0;
+  padding: 0.8rem;
+  border-top-left-radius: $topLeftRadius;
+  border-bottom-right-radius: $btmRightRadius;
+}
